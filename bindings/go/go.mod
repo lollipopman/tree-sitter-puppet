@@ -1,4 +1,4 @@
-module github.com/tree-sitter/tree-sitter-puppet
+module github.com/lollipopman/tree-sitter-puppet
 
 go 1.22
 

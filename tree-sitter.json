@@ -6,7 +6,8 @@
       "scope": "source.puppet",
       "path": ".",
       "file-types": [
-        "pp"
+        "pp",
+        "epp"
       ]
     }
   ],

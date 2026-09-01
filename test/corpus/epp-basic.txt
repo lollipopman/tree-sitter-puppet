@@ -1,0 +1,31 @@
+================================================================================
+basic epp
+================================================================================
+| String[1] $domain,
+    Boolean   $bubbles
+|
+
+$my_fqdn = $fqdn
+--------------------------------------------------------------------------------
+(manifest
+  (parameter_list
+    (parameter
+      (typed_parameter
+        (type)
+        (access
+          (access_element
+            (number)))
+        (regular_parameter
+          (variable
+            (name)))))
+    (parameter
+      (typed_parameter
+        (type)
+        (regular_parameter
+          (variable
+            (name))))))
+  (statement
+    (variable
+      (name))
+    (variable
+      (name))))

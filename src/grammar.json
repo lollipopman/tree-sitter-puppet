@@ -3,14 +3,36 @@
   "name": "puppet",
   "rules": {
     "manifest": {
-      "type": "CHOICE",
+      "type": "SEQ",
       "members": [
         {
-          "type": "SYMBOL",
-          "name": "_statements"
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "ALIAS",
+              "content": {
+                "type": "SYMBOL",
+                "name": "_lambda_parameter_list"
+              },
+              "named": true,
+              "value": "parameter_list"
+            },
+            {
+              "type": "BLANK"
+            }
+          ]
         },
         {
-          "type": "BLANK"
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "SYMBOL",
+              "name": "_statements"
+            },
+            {
+              "type": "BLANK"
+            }
+          ]
         }
       ]
     },

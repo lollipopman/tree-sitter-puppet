@@ -86,8 +86,10 @@ module.exports = grammar({
   ],
 
   rules: {
-    manifest: $ => optional(
-      $._statements,
+    manifest: $ => seq(
+      // Allow EPP lamda like parameter lists at the beginning of a file
+      optional(alias($._lambda_parameter_list, $.parameter_list)),
+      optional($._statements),
     ),
 
     // Collects sequence of elements into a list that the _statements rule can

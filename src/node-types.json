@@ -6660,6 +6660,10 @@
       "required": false,
       "types": [
         {
+          "type": "parameter_list",
+          "named": true
+        },
+        {
           "type": "statement",
           "named": true
         }
